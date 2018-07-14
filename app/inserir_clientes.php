@@ -29,13 +29,13 @@ if ($argc == 2) {
 			$cont++;
 		}
 
-		$DAOCliente = new DAOCliente('localhost', 'aml_testePHP_2018', 'aml_devtest', 'aml_devtest2018');
+		$DAOCliente = new DAOCliente('localhost', 'testePHP_2018', 'devtest', 'devtest2018');
 
 		echo "Executando operação\n";
 		$DAOCliente->inserirVarios($clientes);
 		echo "Operação finalizada\n\n";
 
-
+		fclose($handle);
 		return true;
 
 	} else {
